@@ -8,7 +8,7 @@ pipeline{
                 sh 'rm -rf /tmp/NODEAPP '
                 sh'git clone https://github.com/Pavan-971/NODEAPP.git'
                 
-                sh 'bash noderestart.sh'
+                sh 'forever stop /tmp/NODEAPP/Web-app/server.js'
                 sh 'cp -R NODEAPP /tmp'
                 sh 'forever start /tmp/NODEAPP/Web-app/server.js'
                
