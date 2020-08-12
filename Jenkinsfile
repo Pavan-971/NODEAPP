@@ -5,7 +5,7 @@ pipeline{
         {
             steps{
                 
-                sh 'forever restart /tmp/node-app-inst/Web-app/server.js'
+                sh 'forever -a -l /tmp/node-app-inst/Web-app/server.js'
                
                 sh 'echo ohjjjlbbblfjjhhhdddfkhhk'
         
