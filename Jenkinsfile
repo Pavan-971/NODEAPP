@@ -4,7 +4,7 @@ pipeline{
         stage("Getting code from repo")
         {
             steps{
-                sh 'forever stop /tmp/NODEAPP/Web-app/server.js'
+                
                 sh 'rm -rf NODEAPP '
                 sh 'rm -rf /tmp/NODEAPP '
                 sh'git clone https://github.com/Pavan-971/NODEAPP.git'
