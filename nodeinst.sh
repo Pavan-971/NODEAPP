@@ -3,3 +3,4 @@ sudo yum install nodejs
 sudo npm init
 sudo npm install --save express
 npm install ejs --save
+npm install forever -g
