@@ -13,7 +13,7 @@ pipeline{
                 sh 'cp -R NODEAPP /tmp'
                 sh 'forever start /tmp/NODEAPP/Web-app/server.js'
                
-                sh 'echo ohjjjlbbblfjjhhhdddfkhhk'
+                sh 'echo ohjjjlbbblfjjhhhdddsssfkhhk'
         
             }
         }

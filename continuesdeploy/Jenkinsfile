@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+    stages{
+        stage("Code Deployment")
+        {
+            steps{
+               
+                
+                
+                sh 'tar -zcvf  /tmp/NODEAPP.tar.gz /tmp/NODEAPP' 
+               
+                sh "sshpass -p 'pavankumar' scp /tmp/NODEAPP.tar.gz root@18.221.161.17:/home"
+                sh 'ansible-playbook /home/ansible/playbook.yml'
+                sh 'echo oiiinnnnjiddddsssk'
+                
+                 
+
+
+                
+        
+            }
+        }
+    }
+}
