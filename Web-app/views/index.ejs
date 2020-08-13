@@ -28,7 +28,11 @@
             value="Get Weather"
           />
         </form>
-        
+        <% if(value !== null){ %>
+        <p><%= value %></p>
+        <% } %> <% if(error !== null){ %>
+        <p><%= error %></p>
+        <% } %>
       </fieldset>
     </div>
   </body>
