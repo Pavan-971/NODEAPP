@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 })
 app.post('/', function (req, res) {
   console.log(req.body.city);
-  res.render('/tmp/NODEAPP/Web-app/index');  
+  res.render('/tmp/NODEAPP/Web-app/views/index');  
 })
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
