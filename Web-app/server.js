@@ -7,6 +7,7 @@ const apiKey = 'c2538ea856da5fe4035b11811cb61ad0';
  
 app.use(express.static('/tmp/NODEAPP/Web-app/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.set('views', '/tmp/NODEAPP/Web-app/views');
 app.set('view engine', 'ejs')
  
 app.get('/', function (req, res) {
