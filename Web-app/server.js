@@ -19,14 +19,14 @@ app.post('/', function (req, res) {
   console.log(req.body.city)
   request(url, function (err, response, body) {
     if(err){
-      res.render('index', {weather: null, error: 'Error, please try again'});
+      res.render('/tmp/NODEAPP/Web-app/views/index', {weather: null, error: 'Error, please try again'});
     } else {
       let weather = JSON.parse(body)
       if(weather.main == undefined){
-        res.render('index', {weather: null, error: 'Error, please try again'});
+        res.render('/tmp/NODEAPP/Web-app/views/index', {weather: null, error: 'Error, please try again'});
       } else {
         let weatherText = `It's ${weather.main.temp} degrees with ${weather.weather[0].main} in ${weather.name}!`;
-        res.render('index', {weather: weatherText, error: null});
+        res.render('/tmp/NODEAPP/Web-app/views/index', {weather: weatherText, error: null});
         console.log("body:", body)
       }
     }
