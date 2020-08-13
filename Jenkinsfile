@@ -5,8 +5,8 @@ pipeline{
         {
             steps{
                 
-                sh 'rm -rf NODEAPP '
-                sh 'rm -rf /tmp/NODEAPP '
+                sh '#rm -rf NODEAPP '
+                sh '#rm -rf /tmp/NODEAPP '
                 sh'git clone https://github.com/Pavan-971/NODEAPP.git'
                 
               
