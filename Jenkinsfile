@@ -11,6 +11,7 @@ pipeline{
                      rm -rf NODEAPP 
                      git clone https://github.com/Pavan-971/NODEAPP.git
                      cd $PWD; forever start /tmp/NODEAPP/Web-app/server.js
+                     echo hi
 
                      
                    '''
